@@ -1,6 +1,6 @@
 # Introduction
 
-Sall-project Assignment (https://github.com/facebook/create-react-app).
+Sall-project Assignment (https://github.com/santanu04ghosh/sall-assignment.git).
 
 ## Setup Development Environment
 
