@@ -28,8 +28,7 @@ Now, in the browser go to localhost:3000
 
 ### Pages and Components Info
 
-. App.js => Main component where fetch the date from  https://randomuser.me/ to create a REST API to return a 
-list of 10 users
+. App.js => Main component where fetch the data from  https://randomuser.me/ and return 10 user list and pass to another components.
 
 .AllPersonList.js => Where I have define the search (By UserName) and pagination logic.
 
