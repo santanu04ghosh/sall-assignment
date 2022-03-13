@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sall-project Assignment (https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Setup Development Environment
 
-In the project directory, you can run:
+To kickstart the development of the web app with StartP, at first need to setup the react development environment.
 
-### `npm start`
+Following tools are needed to setup a react dev environment:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Node JS
+NodeJS works as a node package manager behind the scene. It is recommended to download and install the latest version of Node JS from its official site https://nodejs.org/en/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Preparation
 
-### `npm test`
+You'll need to install Node.js >=v14.16+ (Recommended Version) (NPM comes along with it) and serve (an NPM package)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Use command line tool i.e. PowerShell or terminal and navigate to the project(StartP) root. This is PowerShell in windows and terminal on mac/linux.
 
-### `npm run build`
+Let's have a look on the setup process:
+Use terminal and navigate to the project root.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Then run : npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Then run : npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Now, in the browser go to localhost:3000
 
-### `npm run eject`
+### Pages and Components Info
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+. App.js => Main component where fetch the date from  https://randomuser.me/ to create a REST API to return a 
+list of 10 users
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+.AllPersonList.js => Where I have define the search (By UserName) and pagination logic.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+.Pagination.js => Where I render the pagination style and logic.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+.Context => This folder contains two file for crate a ReactContext and write state logic for useContext
 
-## Learn More
+.Modal.js => Craete Modal to populate data when user hit on userName.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+.scss => conatins all the components style.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+***  On page refresh user should be on the same page and with same 
+result (Do not use browser storage). I don't know how to do without any server or browser Storage.
