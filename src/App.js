@@ -7,7 +7,6 @@ import './scss/main.scss'
 function App() {
 
   const url = 'https://randomuser.me/api/?results=10';
-  const randomImageUrl = 'https://randomuser.me/api/portraits/men/23.jpg';
 
   const [isLoading, setIsLoading] = useState(false);
   const[listPersons, setListPersons] = useState([])
