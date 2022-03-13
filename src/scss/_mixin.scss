@@ -1,0 +1,14 @@
+@mixin normalFont($font-size) {
+    font-size: $font-size;
+    color: $text-color;
+}
+@mixin bigFont($font-size) {
+    font-size: $font-size;
+    color: $text-color;
+    font-weight: 600;
+}
+@mixin flexContainer($align-item) {
+    display: flex;
+    align-items: $align-item;
+    flex-wrap: wrap;
+}
